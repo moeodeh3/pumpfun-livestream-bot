@@ -21,7 +21,6 @@ export const cleanUpSeenAddresses = async () => {
     // we cross check the livestreams with the map and remove tokens that are no longer being livestreamed
     for (const mint of seenAddresses.keys()) {
       if (!activeMints.has(mint)) {
-        console.log("Removing inactive live stream"); //TODO: remove this
         seenAddresses.delete(mint);
       }
     }

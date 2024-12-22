@@ -1,5 +1,6 @@
 import express from "express";
 import cron from "node-cron";
+import dotenv from 'dotenv';
 import {
   cleanUpSeenAddresses,
   startFetchingPumpFunLiveStreams,
@@ -7,6 +8,9 @@ import {
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// load environment variables
+dotenv.config();
 
 // middleware
 app.use(express.json());
