@@ -1,5 +1,5 @@
 # Node Server
-This project is a Node.js server that tracks live streams from Pump.Fun and sends notifications to a Telegram bot. It uses Express for the server, Axios for HTTP requests, and node-cron for scheduling tasks.
+This project is a Node.js server that tracks live streams from Pump.Fun and sends notifications to a Telegram chat when a token starts a live stream. It uses Express for the server, Axios for HTTP requests, and node-cron for scheduling tasks.
 
 ## Project Structure
 
@@ -42,6 +42,11 @@ node-server/
     yarn
     ```
 4. Create a `.env` file in the root directory and add your environment variables. An example `.env` file is provided for reference.
+
+### Getting Bot Token and Chat ID
+
+To get the bot token and chat ID, follow the instructions in this [gist](https://gist.github.com/nafiesl/4ad622f344cd1dc3bb1ecbe468ff9f8a).
+
 
 ### Build
 
